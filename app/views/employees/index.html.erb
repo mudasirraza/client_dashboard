@@ -1,5 +1,15 @@
 <div class="container table-responsive">
-  <h1>Employees</h1>
+  <div class="row">
+    <div class="col-8">
+      <h1>Employees</h1>
+    </div>
+    <div class="col-2">
+      <%= link_to 'New Employee', new_employee_path, class: 'btn btn-primary' %>
+    </div>
+    <div class="col-2">
+      <%= link_to 'Upload Excel', upload_employees_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
   <table class="table table-hover table-sm">
     <thead class="thead-dark">
       <tr>
@@ -27,8 +37,4 @@
       <% end %>
     </tbody>
   </table>
-</div>
-
-<div class="container">
-  <%= link_to 'New Employee', new_employee_path, class: 'btn btn-primary' %>
 </div>
